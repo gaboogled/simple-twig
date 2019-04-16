@@ -29,18 +29,13 @@
     "xterm": "^3.12.2"
   },
   "description": "A simple Material io | H5BP | Bootstrap 4 Theme Framework",
+
   "keywords": [
     "simple",
-    "material",
-    "web",
-    "components",
-    "bootstrap",
-    "4",
-    "html",
-    "5",
-    "boilerplate",
-    "slim",
-    "3",
+    "material web components",
+    "bootstrap 4",
+    "html5 boilerplate",
+    "slim 3",
     "php",
     "micro-framework"
   ]
