@@ -22,7 +22,8 @@
   "dependencies": {
     "highlight.js": "^9.15.6",
     "jquery": "^3.4.0",
-    "xterm": "^3.12.2"
+    "xterm": "^3.12.2",
+    "bootstrap-bundle.js": "^*"
   },
   "description": "A simple Material io | H5BP | Bootstrap 4 Theme Framework",
   "keywords": [
