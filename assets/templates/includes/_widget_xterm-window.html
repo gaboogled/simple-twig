@@ -1,0 +1,25 @@
+<!-- X-Termerminal Window Customize using my_simple.css file.
+
+To start using xterm.js on your browser, add the xterm.js and xterm.css to the head of your html page. Then create a <div id="terminal"></div> onto which xterm can attach itself. Finally instantiate the Terminal object and then call the open function with the DOM object of the div.
+-->
+
+<template id="xterm-terminado">
+    <div class="xterm-container">
+        <div id="terminal-container"></div>
+    </div>
+
+<script>
+terminado.apply(Terminal);
+
+var term = new Terminal(),
+    protocol = (location.protocol === 'https:') ? 'wss://' : 'ws://',
+    socketURL = protocol + location.hostname + ((location.port) ? (':' + location.port) : '') + "/websocket";
+    sock = new WebSocket(socketURL);
+
+sock.addEventListener('open', function () {
+  term.terminadoAttach(sock);
+});
+
+term.open(document.getElementById('terminal-container'));
+</script>
+</template>

@@ -1,0 +1,239 @@
+// Typography
+  //
+  // simple FONTS
+     @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900|IBM+Plex+Mono|Libre+Barcode+128|Libre+Barcode+128+Text|Libre+Barcode+39|Libre+Barcode+39+Extended|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|PT+Mono|Questrial|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+     body {
+       font-family: "Montserrat", "Helvetica", "Heebo", "Roboto", sans-serif !important;
+       font-weight: 400 !important;
+     }
+
+     h1, h2, h3, h4, h5, h6 {
+       font-family: "Questrial", "Montserrat", "Heebo", "Roboto", "Helvetica", sans-serif !important;
+       font-weight: 400 !important;
+     }
+    //
+    // Material Design Lite Mixins
+       @mixin typo-display-4($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 112px !important;
+         font-weight: 300 !important;
+         line-height: 1 !important;
+         letter-spacing: -0.04em !important;
+
+         @if $colorContrast {
+           opacity: 0.54 !important;
+         }
+       }
+
+       @mixin typo-display-3($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 56px !important;
+         font-weight: 400 !important;
+         line-height: 1.35 !important;
+         letter-spacing: -0.02em !important;
+
+         @if $colorContrast {
+           opacity: 0.54 !important;
+         }
+       }
+
+       @mixin typo-display-2($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 45px !important;
+         font-weight: 400 !important;
+         line-height: 48px !important;
+
+         @if $colorContrast {
+           opacity: 0.54 !important;
+         }
+       }
+
+       @mixin typo-display-1($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 34px !important;
+         font-weight: 400 !important;
+         line-height: 40px !important;
+
+         @if $colorContrast {
+           opacity: 0.54 !important;
+         }
+       }
+
+       @mixin typo-headline($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 24px !important;
+         font-weight: 400 !important;
+         line-height: 32px !important;
+         -moz-osx-font-smoothing: grayscale !important;
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+
+       @mixin typo-title($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 20px !important;
+         font-weight: 500 !important;
+         line-height: 1 !important;
+         letter-spacing: 0.02em !important;
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+
+       @mixin typo-subhead($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 16px !important;
+         font-weight: 400 !important;
+         line-height: 24px !important;
+         letter-spacing: 0.04em !important;
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+
+       @mixin typo-subhead-2($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 16px !important;
+         font-weight: 400 !important;
+         line-height: 28px !important;
+         letter-spacing: 0.04em !important;
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+
+       @mixin typo-body-2($colorContrast: false, $usePreferred: false) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 14px !important;
+         @if $usePreferred {
+          font-weight: 500 !important;
+         } @else {
+          font-weight: bold !important;
+         }
+         line-height: 24px !important;
+         letter-spacing: 0 !important;
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+
+       @mixin typo-body-1($colorContrast: false, $usePreferred: false) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 14px !important;
+         font-weight: 400 !important;
+         line-height: 24px !important;
+         letter-spacing: 0 !important;
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+
+       @mixin typo-caption($colorContrast: false, $usePreferred: false) {
+         @include typo-preferred-font($usePreferred);
+         font-size: 12px !important;
+         font-weight: 400 !important;
+         line-height: 1 !important;
+         letter-spacing: 0 !important;
+
+         @if $colorContrast {
+           opacity: 0.54 !important;
+         }
+       }
+
+       @mixin typo-blockquote($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+
+         @if $colorContrast {
+           opacity: 0.54 !important;
+         }
+       }
+
+       @mixin typo-menu($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+
+       @mixin typo-button($colorContrast: false, $usePreferred: true) {
+         @include typo-preferred-font($usePreferred);
+
+         @if $colorContrast {
+           opacity: 0.87 !important;
+         }
+       }
+       /* Shadows */
+       //
+       // Focus shadow mixin.
+       @mixin focus-shadow() {
+         box-shadow: 0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);
+       }
+
+       @mixin shadow-2dp() {
+         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+                     0 3px 1px -2px rgba(0, 0, 0, $shadow-key-umbra-opacity),
+                     0 1px 5px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity) !important;
+       }
+       @mixin shadow-3dp() {
+         box-shadow: 0 3px 4px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+                     0 3px 3px -2px rgba(0, 0, 0, $shadow-key-umbra-opacity),
+                     0 1px 8px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity) !important;
+       }
+       @mixin shadow-4dp() {
+         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+                     0 1px 10px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+                     0 2px 4px -1px rgba(0, 0, 0, $shadow-key-umbra-opacity) !important;
+       }
+       @mixin shadow-6dp() {
+         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+                     0 1px 18px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+                     0 3px 5px -1px rgba(0, 0, 0, $shadow-key-umbra-opacity) !important;
+       }
+       @mixin shadow-8dp() {
+         box-shadow: 0 8px 10px 1px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+                     0 3px 14px 2px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+                     0 5px 5px -3px rgba(0, 0, 0, $shadow-key-umbra-opacity) !important;
+       }
+
+       @mixin shadow-16dp() {
+         box-shadow: 0 16px 24px 2px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+                     0  6px 30px 5px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+                     0  8px 10px -5px rgba(0, 0, 0, $shadow-key-umbra-opacity) !important;
+       }
+
+       @mixin shadow-24dp() {
+         box-shadow: 0  9px 46px  8px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+                     0 11px 15px -7px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+                     0 24px 38px  3px rgba(0, 0, 0, $shadow-key-umbra-opacity) !important;
+       }
+
+      //
+      // Blockquote
+         .blockquote {
+           padding: $blockquote-padding-y $blockquote-padding-x !important;
+         &.text-right {
+           border-left: none !important;
+         }
+         .bq-title {
+           margin-bottom: 0 !important;
+           font-size: $font-size-large !important;
+           font-weight: 400 !important;
+         }
+         p {
+           padding: $blockquote-p-padding-y 0 !important;
+           font-size: $blockquote-p-font-size !important;
+         }
+       }
+
+       .font-small {
+         font-size: $font-small !important;
+       }
