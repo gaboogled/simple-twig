@@ -1,12 +1,12 @@
 {
-  "name": "simple_theme",
+  "name": "simple_MH5BP4",
   "version": "0.7.34",
   "main": "index.js",
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "http://git.mdbootstrap.com/mdb/jquery/jq-gulp.git"
+    "url": "https://github.com/gaboogled/simple_MH5BP4.git"
   },
   "author": "George Freeney-Jones",
   "license": "MIT",
