@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import "config/daytime_reboot";
+/*!
+ *
+ * Copyright: George Freeney-Jones
+ * https://#
+ */
+// simple Daytime Mode Default CSS Color Settings
+//
+// Bootstrap.css Default Color Settings
+    //
+    // Divider
+     &:before,
+     &:after {
+       background: #c6c6c6 !important;
+       }
+     }
+     // Blockquote
+      .blockquote {
+        border-left: .25rem solid #eceeef !important;
+        &.text-right {
+          border-right: .25rem solid #eceeef !important;
+        }
+      }
+      //
+//  X-Term Default Collors
+   //
+    .xterm .xterm-viewport {
+      /* On OS X this is required in order for the scroll bar to appear fully opaque */
+      background-color: #000;
+    }
+
+     .xterm .composition-view {
+       background: #000;
+       color: #FFF;
+     }
+     @media (min-width: 800px) and (max-width: 850px) {
+       .navbar:not(.top-nav-collapse) {
+         background: #1C2331 !important;
+       }
+     }

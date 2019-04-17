@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*!
+ * simple MioH5BP4 Web Application Theme (JQuery)
+ * Version: 0.7.34
+ *
+ * Copyright: George Freeney-Jones
+ * https://#
+ * Attribution: Twitter Bootstrap, Material Design MDC, Reeboot CSS, PrismJS
+ */
+
+// Bootstrap
+@import "config/daytime_reboot";
+
+@import "core/bootstrap/functions";
+@import "core/bootstrap/rfs";
+@import "core/daytime_variables";
+@import "core/bootstrap/variables";
+
+// simple CORE
+@import "core/daytime_colors_colors";
+@import "core/daytime_typography";
+@import "core/mixins";
+
+// Your custom styles
+//@import "custom_styles";
