@@ -2,7 +2,8 @@
 ###################
 _build
 vendor/
-_src/
+_src/addons/
+_src/sass/
 _srcHTML/
 _site
 .sass-cache
