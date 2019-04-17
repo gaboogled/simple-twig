@@ -38,6 +38,7 @@
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "url-parse": ">=1.4.3",
+    "lodash": ">=4.17.11",
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.11.5"
   },
