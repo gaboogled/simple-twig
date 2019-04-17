@@ -151,3 +151,81 @@ module.exports = [
     },
   }
 ];
+//
+// simple MDC Webpack Theme Setup Workflow
+//
+function getStyleUse(bundleFilename) {
+  return [
+    {
+      loader: 'file-loader',
+      options: {
+        name: bundleFilename,
+      },
+    },
+    { loader: 'extract-loader' },
+    { loader: 'css-loader' },
+    {
+      loader: 'sass-loader',
+      options: {
+        includePaths: ['./node_modules'],
+        implementation: require('dart-sass'),
+        fiber: require('fibers'),
+      }
+    },
+  ];
+}
+
+module.exports = [
+  {
+    entry: './simple-mdc_assets/sass/simple-mdc_login.scss',
+    output: {
+      // This is necessary for webpack to compile, but we never reference this js file.
+      filename: 'style-bundle-login.js',
+    },
+    module: {
+      rules: [{
+        test: /simple-mdc_login.scss$/,
+        use: getStyleUse('bundle-login.css')
+      }]
+    },
+  },
+  {
+    entry: './simple-mdc_assets/sass/simple-mdc_home.scss',
+    output: {
+      // This is necessary for webpack to compile, but we never reference this js file.
+      filename: 'style-bundle-home.js',
+    },
+    module: {
+      rules: [{
+        test: /simple-mdc_home.scss$/,
+        use: getStyleUse('bundle-home.css')
+      }]
+    },
+  },
+  {
+    entry: "./simple-mdc_assets/js/simple-mdc_login.js",
+    output: {
+      filename: "bundle-login.js"
+    },
+    module: {
+      loaders: [{
+        test: /simple-mdc_login.js$/,
+        loader: 'babel-loader',
+        query: {presets: ['env']}
+      }]
+    },
+  },
+  {
+    entry: "./simple-mdc_assets/js/simple-mdc_home.js",
+    output: {
+      filename: "bundle-home.js"
+    },
+    module: {
+      loaders: [{
+        test: /simple-mdc_home.js$/,
+        loader: 'babel-loader',
+        query: {presets: ['env']}
+      }]
+    },
+  }
+];

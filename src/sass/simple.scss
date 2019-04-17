@@ -8,6 +8,12 @@
  * Attribution: Twitter Bootstrap, Material Design MDC, Reeboot CSS, PrismJS
  */
 
+// Basic CSS Ordering rules
+// 1. Inline css ( html style attribute ) overrides css rules in style tag and css file
+// 2. A more specific selector takes precedence over a less specific one
+// 3. Rules that appear later in the code override earlier rules if both have the same specificity.
+// 4. A css rule with !important always takes precedence.
+
 // Bootstrap
 @import "config/daytime_reboot";
 

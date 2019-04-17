@@ -1,6 +1,8 @@
 # Custom #
 ###################
-_build
+_build/_sass/
+_build/css/
+_build/js/
 vendor/
 _src/addons/
 _src/sass/
