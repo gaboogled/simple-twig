@@ -32,6 +32,7 @@
     "dart-sass": "^1.17.2",
     "extract-loader": "^3.1.0",
     "fibers": "^3.1.1",
+    "macaddress": ">=0.2.9",
     "file-loader": "^3.0.1",
     "sass-loader": "^7.1.0",
     "node-sass": "^4.11.0",
